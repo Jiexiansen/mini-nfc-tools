@@ -1,0 +1,25 @@
+<view class="page">
+  <view class="load-box">
+    <textarea
+      class="load-textarea"
+      maxlength="-1"
+      value="{{strContent}}"
+      placeholder="请输入..."
+      bindinput="onInputStr"
+    />
+  </view>
+  <view class="btn-load" bindtap="onTapLoad">批量加载</view>
+  <view class="btn-clear" bindtap="onClear">清除</view>
+  <view wx:if="{{lastKey}}" class="btn-clear" bindtap="onLastOperate">继续上一次操作</view>
+  
+  <!-- <view class="list-view">
+    <view class="list-item">
+      <view class="label">标签协议</view>
+      <view class="value">{{ nfcInfo.tag_techs }}</view>
+    </view>
+    <view class="list-item">
+      <view class="label">标签协议</view>
+      <view class="value">{{ nfcInfo.tag_techs }}</view>
+    </view>
+  </view> -->
+</view>

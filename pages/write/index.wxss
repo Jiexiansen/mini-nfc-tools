@@ -1,0 +1,37 @@
+.page {
+  padding: 20px;
+  background-color: #f2f2f2;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.load-textarea {
+  background-color: #fff;
+  width: 100%;
+  padding: 20rpx;
+  height: calc(100vh - 400rpx);
+  font-size: 25rpx;
+  box-sizing: border-box;
+}
+
+.btn-load {
+  width: 100%;
+  line-height: 80rpx;
+  text-align: center;
+  font-size: 30rpx;
+  border-radius: 20rpx;
+  margin: 30rpx auto;
+  color: #fff;
+  background-color: #22c068;
+}
+
+.btn-clear {
+  width: 100%;
+  line-height: 80rpx;
+  text-align: center;
+  font-size: 30rpx;
+  border-radius: 20rpx;
+  margin: 30rpx auto;
+  color: #22c068;
+  background-color: #ffff;
+}

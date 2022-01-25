@@ -1,0 +1,58 @@
+.page {
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f1f1f1;
+  height: 100vh;
+}
+
+.msg-box {
+  min-height: 300rpx;
+  border-radius: 30rpx;
+  overflow: hidden;
+  background-color: #fff;
+  margin-bottom: 30rpx;
+}
+
+.msg-box .text {
+  text-align: center;
+  line-height: 40rpx;
+  padding: 20rpx;
+  font-size: 28rpx;
+  color: #333;
+}
+
+.ndef-box {
+  border-radius: 30rpx;
+  overflow: hidden;
+  min-height: 500rpx;
+  padding-bottom: 10px;
+  background-color: #fff;
+}
+
+
+.msg-box .title,
+.ndef-box .title {
+  font-weight: 700;
+  text-align: center;
+  line-height: 100rpx;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.ndef-box .content {
+  display: flex;
+  padding: 10px;
+  font-size: 28rpx;
+  line-height: 36rpx;
+}
+
+.ndef-box .content .label {
+  font-weight: 700;
+  min-width: 90rpx;
+}
+
+.ndef-box .placeholder {
+  line-height: 188rpx;
+  text-align: center;
+  color: #666;
+  font-size: 28rpx;
+}

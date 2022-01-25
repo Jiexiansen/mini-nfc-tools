@@ -1,0 +1,38 @@
+<view class="page">
+  <view class="info-wrap">
+    <view class="info-box {{ infoState == 0 ? 'info-box-error' : ''}}">
+      <view class="title">{{ title }}</view>
+      <view>{{ content }}</view>
+      <view wx:if="{{ read.type }}" class="text">类型：{{read.type}}</view>
+      <view wx:if="{{ read.payload }}" class="text">内容：{{read.payload}}</view>
+    </view>
+  </view>
+
+  <scroll-view scroll-y class="key-list">
+    <view wx:for="{{ keyList }}" wx:key="index" class="key-item">
+      <view class="top-block">
+        <view class="idx">{{ item.idx }}：</view>
+        <view class="content">{{ item.text }}</view>
+      </view>
+      <view class="bottom-block">
+        <button
+          class="btn"
+          type="{{ btnTypes[item.writeState] }}"
+          data-item="{{item}}"
+          bindtap="onWriteNdefInfo"
+        >
+          写入
+        </button>
+        <button
+          class="btn"
+          type="{{ btnTypes[item.verificationState] }}"
+          data-item="{{item}}"
+          bindtap="onValidate"
+        >
+          验证
+        </button>
+      </view>
+    </view>
+    <view class="end-item">--- End ---</view>
+  </scroll-view>
+</view>

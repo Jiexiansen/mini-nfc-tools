@@ -1,0 +1,42 @@
+{
+  "pages":[
+    "pages/read/index",
+    "pages/write/index",
+    "pages/other/index",
+    "pages/write-list/index"
+  ],
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "#d93e4b",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "selectedIconPath": "static/image/tabbar/read-selected.png",
+        "iconPath": "static/image/tabbar/read.png",
+        "pagePath": "pages/read/index",
+        "text": "读取"
+      },
+      {
+        "selectedIconPath": "static/image/tabbar/write-selected.png",
+        "iconPath": "static/image/tabbar/write.png",
+        "pagePath": "pages/write/index",
+        "text": "写入"
+      },
+      {
+        "selectedIconPath": "static/image/tabbar/other-selected.png",
+        "iconPath": "static/image/tabbar/other.png",
+        "pagePath": "pages/other/index",
+        "text": "其它"
+      }
+    ]
+  },
+  "window": {
+    "backgroundColor": "#f6f6f6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "千随",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
